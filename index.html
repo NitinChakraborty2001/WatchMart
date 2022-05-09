@@ -1,0 +1,824 @@
+<!--
+	🖥️Full-Stack Developer 🎨Graphic Designer 💸Freelancer
+
+    👨‍💻Author : Nitin Chakraborty.
+
+    🔗Facebook : https://www.facebook.com/NitinChakraborty2001/
+	🔗Instagram : https://www.instagram.com/NitinChakraborty2001/
+	🔗YouTube : http://www.youtube.com/c/NitinChakraborty2001/
+	🔗LinkedIn : https://www.linkedin.com/in/NitinChakraborty2001/
+	🔗Twitter : https://www.twitter.com/NitinCB2001/
+
+    📧eMail : nitin.chakraborty13@gmail.com
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Head -->
+	<head>
+		<!-- Required Meta Tags -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Favourite Icon -->
+		<link rel="shortcut icon" href="./Assets/Media/Favicon.png" type="image/x-icon" />
+
+		<!-- Boxicons CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
+
+		<!-- Swiper - CSS -->
+		<link rel="stylesheet" href="./Assets/CSS/swiper-bundle.min.css" />
+
+		<!-- Template - CSS -->
+		<link rel="stylesheet" href="./Assets/CSS/Style.css" />
+
+		<!-- Title -->
+		<title>WatchMart - Nitin Chakraborty</title>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header class="header" id="header">
+			<nav class="nav container">
+				<!-- Logo -->
+				<a href="#" class="nav__logo">
+					<i class="bx bxs-watch nav__logo-icon"></i> WatchMart
+				</a>
+
+				<div class="nav__menu" id="nav-menu">
+					<!-- Navigation List -->
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="nav__link active-link">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="#featured" class="nav__link">Featured</a>
+						</li>
+						<li class="nav__item">
+							<a href="#products" class="nav__link">Products</a>
+						</li>
+						<li class="nav__item">
+							<a href="#new" class="nav__link">New</a>
+						</li>
+					</ul>
+
+					<div class="nav__close" id="nav-close">
+						<i class="bx bx-x"></i>
+					</div>
+				</div>
+
+				<div class="nav__btns">
+					<!-- Theme Change Button -->
+					<i class="bx bx-moon change-theme" id="theme-button"></i>
+
+					<div class="nav__shop" id="cart-shop">
+						<i class="bx bx-shopping-bag"></i>
+					</div>
+
+					<div class="nav__toggle" id="nav-toggle">
+						<i class="bx bx-grid-alt"></i>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Cart -->
+		<div class="cart" id="cart">
+			<i class="bx bx-x cart__close" id="cart-close"></i>
+
+			<h2 class="cart__title-center">My Cart</h2>
+
+			<div class="cart__container">
+				<article class="cart__card">
+					<div class="cart__box">
+						<img
+							src="./Assets/Media/Rolex Cosmograph Daytona.webp"
+							alt="Rolex Cosmograph Daytona"
+							class="cart__img"
+						/>
+					</div>
+
+					<div class="cart__details">
+						<h3 class="cart__title">ROLEX Cosmograph Daytona</h3>
+						<span class="cart__price">₹10,17,499</span>
+
+						<div class="cart__amount">
+							<div class="cart__amount-content">
+								<span class="cart__amount-box">
+									<i class="bx bx-minus"></i>
+								</span>
+
+								<span class="cart__amount-number">1</span>
+
+								<span class="cart__amount-box">
+									<i class="bx bx-plus"></i>
+								</span>
+							</div>
+
+							<i class="bx bx-trash-alt cart__amount-trash"></i>
+						</div>
+					</div>
+				</article>
+
+				<article class="cart__card">
+					<div class="cart__box">
+						<img
+							src="./Assets/Media/Rolex GMT-MASTER II.webp"
+							alt="Rolex GMT-MASTER II"
+							class="cart__img"
+						/>
+					</div>
+
+					<div class="cart__details">
+						<h3 class="cart__title">ROLEX GMT-MASTER II</h3>
+						<span class="cart__price">₹30,00,000</span>
+
+						<div class="cart__amount">
+							<div class="cart__amount-content">
+								<span class="cart__amount-box">
+									<i class="bx bx-minus"></i>
+								</span>
+
+								<span class="cart__amount-number">1</span>
+
+								<span class="cart__amount-box">
+									<i class="bx bx-plus"></i>
+								</span>
+							</div>
+
+							<i class="bx bx-trash-alt cart__amount-trash"></i>
+						</div>
+					</div>
+				</article>
+
+				<article class="cart__card">
+					<div class="cart__box">
+						<img
+							src="./Assets/Media/Rolex CELLINI MOONPHASE.webp"
+							alt="Rolex CELLINI MOONPHASE"
+							class="cart__img"
+						/>
+					</div>
+
+					<div class="cart__details">
+						<h3 class="cart__title">Rolex CELLINI MOONPHASE</h3>
+						<span class="cart__price">₹20,40,999</span>
+
+						<div class="cart__amount">
+							<div class="cart__amount-content">
+								<span class="cart__amount-box">
+									<i class="bx bx-minus"></i>
+								</span>
+
+								<span class="cart__amount-number">1</span>
+
+								<span class="cart__amount-box">
+									<i class="bx bx-plus"></i>
+								</span>
+							</div>
+
+							<i class="bx bx-trash-alt cart__amount-trash"></i>
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<div class="cart__prices">
+				<span class="cart__prices-item">3 Items</span>
+				<span class="cart__prices-total">₹60,58,498</span>
+			</div>
+		</div>
+
+		<!-- Main -->
+		<main class="main">
+			<!-- Home Section -->
+			<section class="home" id="home">
+				<div class="home__container container grid">
+					<div class="home__img-bg">
+						<img
+							src="./Assets/Media/Rolex Cosmograph Daytona.webp"
+							alt="Rolex Cosmograph Daytona"
+							class="home__img"
+						/>
+					</div>
+
+					<div class="home__social">
+						<a
+							href="https://www.facebook.com/NitinChakraborty2001/"
+							target="_blank"
+							class="home__social-link"
+						>
+							Facebook
+						</a>
+						<a
+							href="https://www.twitter.com/NitinCB2001/"
+							target="_blank"
+							class="home__social-link"
+						>
+							Twitter
+						</a>
+						<a
+							href="https://www.instagram.com/NitinChakraborty2001/"
+							target="_blank"
+							class="home__social-link"
+						>
+							Instagram
+						</a>
+					</div>
+
+					<div class="home__data">
+						<h1 class="home__title">
+							ROLEX <br />
+							Cosmograph Daytona
+						</h1>
+						<p class="home__description">
+							This Oyster Perpetual Cosmograph Daytona In 18 Carat Yellow Gold, With A
+							Meteorite And Black Dial And An Oyster Bracelet, Features An 18 Carat
+							Yellow Gold Bezel With Engraved Tachymetric Scale.
+						</p>
+						<span class="home__price">₹10,17,499</span>
+
+						<div class="home__btns">
+							<a href="#" class="button button--gray button--small"> Discover </a>
+
+							<button class="button home__button">Add To Cart</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Featured Section -->
+			<section class="featured section container" id="featured">
+				<h2 class="section__title">Featured</h2>
+
+				<div class="featured__container grid">
+					<article class="featured__card">
+						<span class="featured__tag">Sale</span>
+
+						<img
+							src="./Assets/Media/Rolex SKY-DWELLER.webp"
+							alt="Rolex SKY-DWELLER"
+							class="featured__img"
+						/>
+
+						<div class="featured__data">
+							<h3 class="featured__title">
+								ROLEX <br />
+								SKY-DWELLER
+							</h3>
+							<span class="featured__price">₹1159499</span>
+						</div>
+
+						<button class="button featured__button">ADD TO CART</button>
+					</article>
+
+					<article class="featured__card">
+						<span class="featured__tag">Sale</span>
+
+						<img
+							src="./Assets/Media/Rolex DATEJUST 41.webp"
+							alt="Rolex DATEJUST 41"
+							class="featured__img"
+						/>
+
+						<div class="featured__data">
+							<h3 class="featured__title">
+								ROLEX <br />
+								DATEJUST 41
+							</h3>
+							<span class="featured__price">₹775499</span>
+						</div>
+
+						<button class="button featured__button">ADD TO CART</button>
+					</article>
+
+					<article class="featured__card">
+						<span class="featured__tag">Sale</span>
+
+						<img
+							src="./Assets/Media/Rolex OYSTER PERPETUAL 41.webp"
+							alt="Rolex OYSTER PERPETUAL 41"
+							class="featured__img"
+						/>
+
+						<div class="featured__data">
+							<h3 class="featured__title">
+								ROLEX <br />
+								OYSTER PERPETUAL 41
+							</h3>
+							<span class="featured__price">₹465999</span>
+						</div>
+
+						<button class="button featured__button">ADD TO CART</button>
+					</article>
+				</div>
+			</section>
+
+			<!-- Story Section -->
+			<section class="story section container">
+				<div class="story__container grid">
+					<div class="story__data">
+						<h2 class="section__title story__section-title">Our Story</h2>
+
+						<h1 class="story__title">
+							Inspirational Watch of <br />
+							this year
+						</h1>
+
+						<p class="story__description">
+							The latest and modern watches of this year, is available in various
+							presentations in this store, discover them now.
+						</p>
+
+						<a href="#" class="button button--small">Discover</a>
+					</div>
+
+					<div class="story__images">
+						<img src="./Assets/Media/Story.webp" alt="Story" class="story__img" />
+						<div class="story__square"></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Products Section -->
+			<section class="products section container" id="products">
+				<h2 class="section__title">Products</h2>
+
+				<div class="products__container grid">
+					<article class="products__card">
+						<img
+							src="./Assets/Media/Rolex EXPLORER.webp"
+							alt="Rolex EXPLORER"
+							class="products__img"
+						/>
+
+						<h3 class="products__title">
+							ROLEX <br />
+							EXPLORER
+						</h3>
+						<span class="products__price">₹847499</span>
+
+						<button class="products__button">
+							<i class="bx bx-shopping-bag"></i>
+						</button>
+					</article>
+
+					<article class="products__card">
+						<img
+							src="./Assets/Media/Rolex GMT-MASTER II.webp"
+							alt="Rolex GMT-MASTER II"
+							class="products__img"
+						/>
+
+						<h3 class="products__title">
+							ROLEX <br />
+							GMT-MASTER II
+						</h3>
+						<span class="products__price">₹3000000</span>
+
+						<button class="products__button">
+							<i class="bx bx-shopping-bag"></i>
+						</button>
+					</article>
+
+					<article class="products__card">
+						<img
+							src="./Assets/Media/Rolex MILGAUSS.webp"
+							alt="Rolex MILGAUSS"
+							class="products__img"
+						/>
+
+						<h3 class="products__title">
+							ROLEX <br />
+							MILGAUSS
+						</h3>
+						<span class="products__price">₹695999</span>
+
+						<button class="products__button">
+							<i class="bx bx-shopping-bag"></i>
+						</button>
+					</article>
+
+					<article class="products__card">
+						<img
+							src="./Assets/Media/Rolex DEEPSEA.webp"
+							alt="Rolex DEEPSEA"
+							class="products__img"
+						/>
+
+						<h3 class="products__title">
+							ROLEX <br />
+							DEEPSEA
+						</h3>
+						<span class="products__price">₹1079949</span>
+
+						<button class="products__button">
+							<i class="bx bx-shopping-bag"></i>
+						</button>
+					</article>
+
+					<article class="products__card">
+						<img
+							src="./Assets/Media/Rolex SEA-DWELLER.webp"
+							alt="Rolex SEA-DWELLER"
+							class="products__img"
+						/>
+
+						<h3 class="products__title">
+							Rolex <br />
+							SEA-DWELLER
+						</h3>
+						<span class="products__price">₹1297999</span>
+
+						<button class="products__button">
+							<i class="bx bx-shopping-bag"></i>
+						</button>
+					</article>
+
+					<article class="products__card">
+						<img
+							src="./Assets/Media/Rolex AIR-KING.webp"
+							alt="Rolex AIR-KING"
+							class="products__img"
+						/>
+
+						<h3 class="products__title">
+							ROLEX <br />
+							AIR-KING
+						</h3>
+						<span class="products__price">₹559949</span>
+
+						<button class="products__button">
+							<i class="bx bx-shopping-bag"></i>
+						</button>
+					</article>
+				</div>
+			</section>
+
+			<!-- Testimonial Section -->
+			<section class="testimonial section container">
+				<div class="testimonial__container grid">
+					<div class="swiper testimonial-swiper">
+						<div class="swiper-wrapper">
+							<div class="testimonial__card swiper-slide">
+								<div class="testimonial__quote">
+									<i class="bx bxs-quote-alt-left"></i>
+								</div>
+								<p class="testimonial__description">
+									They are the best watches that one acquires, also they are
+									always with the latest news and trends, with a very comfortable
+									price and especially with the attention you receive, they are
+									always attentive to your questions.
+								</p>
+								<h3 class="testimonial__date">March 27. 2021</h3>
+
+								<div class="testimonial__perfil">
+									<img
+										src="./Assets/Media/Lee Doe.jpg"
+										alt="Testimonial-1"
+										class="testimonial__perfil-img"
+									/>
+
+									<div class="testimonial__perfil-data">
+										<span class="testimonial__perfil-name">Lee Doe</span>
+										<span class="testimonial__perfil-detail"
+											>Director of a Company</span
+										>
+									</div>
+								</div>
+							</div>
+
+							<div class="testimonial__card swiper-slide">
+								<div class="testimonial__quote">
+									<i class="bx bxs-quote-alt-left"></i>
+								</div>
+								<p class="testimonial__description">
+									They are the best watches that one acquires, also they are
+									always with the latest news and trends, with a very comfortable
+									price and especially with the attention you receive, they are
+									always attentive to your questions.
+								</p>
+								<h3 class="testimonial__date">March 27. 2021</h3>
+
+								<div class="testimonial__perfil">
+									<img
+										src="./Assets/Media/Samantha Mey.jpg"
+										alt="Testimonial-2"
+										class="testimonial__perfil-img"
+									/>
+
+									<div class="testimonial__perfil-data">
+										<span class="testimonial__perfil-name">Samantha Mey</span>
+										<span class="testimonial__perfil-detail"
+											>Director of a Company</span
+										>
+									</div>
+								</div>
+							</div>
+
+							<div class="testimonial__card swiper-slide">
+								<div class="testimonial__quote">
+									<i class="bx bxs-quote-alt-left"></i>
+								</div>
+								<p class="testimonial__description">
+									They are the best watches that one acquires, also they are
+									always with the latest news and trends, with a very comfortable
+									price and especially with the attention you receive, they are
+									always attentive to your questions.
+								</p>
+								<h3 class="testimonial__date">March 27. 2021</h3>
+
+								<div class="testimonial__perfil">
+									<img
+										src="./Assets/Media/Raul Zaman.jpg"
+										alt="Testimonial-3"
+										class="testimonial__perfil-img"
+									/>
+
+									<div class="testimonial__perfil-data">
+										<span class="testimonial__perfil-name">Raul Zaman</span>
+										<span class="testimonial__perfil-detail"
+											>Director of a Company</span
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-button-next">
+							<i class="bx bx-right-arrow-alt"></i>
+						</div>
+						<div class="swiper-button-prev">
+							<i class="bx bx-left-arrow-alt"></i>
+						</div>
+					</div>
+
+					<div class="testimonial__images">
+						<div class="testimonial__square"></div>
+						<img
+							src="./Assets/Media/Testimonial.webp"
+							alt="Testimonial"
+							class="testimonial__img"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- New Section -->
+			<section class="new section container" id="new">
+				<h2 class="section__title">New Arrivals</h2>
+
+				<div class="new__container">
+					<div class="swiper new-swiper">
+						<div class="swiper-wrapper">
+							<article class="new__card swiper-slide">
+								<span class="new__tag">New</span>
+
+								<img
+									src="./Assets/Media/Rolex SUBMARINER DATE.webp"
+									alt="Rolex SUBMARINER DATE"
+									class="new__img"
+								/>
+
+								<div class="new__data">
+									<h3 class="new__title">
+										Rolex <br />
+										SUBMARINER DATE
+									</h3>
+									<span class="new__price">₹1120999</span>
+								</div>
+
+								<button class="button new__button">ADD TO CART</button>
+							</article>
+
+							<article class="new__card swiper-slide">
+								<span class="new__tag">New</span>
+
+								<img
+									src="./Assets/Media/Rolex DAY-DATE 36.webp"
+									alt="Rolex DAY-DATE 36"
+									class="new__img"
+								/>
+
+								<div class="new__data">
+									<h3 class="new__title">
+										ROLEX <br />
+										DAY-DATE 36
+									</h3>
+									<span class="new__price">₹2825499</span>
+								</div>
+
+								<button class="button new__button">ADD TO CART</button>
+							</article>
+
+							<article class="new__card swiper-slide">
+								<span class="new__tag">New</span>
+
+								<img
+									src="./Assets/Media/Rolex DAY-DATE 40.webp"
+									alt="Rolex DAY-DATE 40"
+									class="new__img"
+								/>
+
+								<div class="new__data">
+									<h3 class="new__title">
+										ROLEX <br />
+										DAY-DATE 40
+									</h3>
+									<span class="new__price">₹2857499</span>
+								</div>
+
+								<button class="button new__button">ADD TO CART</button>
+							</article>
+
+							<article class="new__card swiper-slide">
+								<span class="new__tag">New</span>
+
+								<img
+									src="./Assets/Media/Rolex YACHT-MASTER 42.webp"
+									alt="Rolex YACHT-MASTER 42"
+									class="new__img"
+								/>
+
+								<div class="new__data">
+									<h3 class="new__title">
+										ROLEX <br />
+										YACHT-MASTER 42
+									</h3>
+									<span class="new__price">₹2160999</span>
+								</div>
+
+								<button class="button new__button">ADD TO CART</button>
+							</article>
+
+							<article class="new__card swiper-slide">
+								<span class="new__tag">New</span>
+
+								<img
+									src="./Assets/Media/Rolex EXPLORER II.webp"
+									alt="Rolex EXPLORER II"
+									class="new__img"
+								/>
+
+								<div class="new__data">
+									<h3 class="new__title">
+										ROLEX <br />
+										EXPLORER II
+									</h3>
+									<span class="new__price">₹721999</span>
+								</div>
+
+								<button class="button new__button">ADD TO CART</button>
+							</article>
+
+							<article class="new__card swiper-slide">
+								<span class="new__tag">New</span>
+
+								<img
+									src="./Assets/Media/Rolex CELLINI MOONPHASE.webp"
+									alt="Rolex CELLINI MOONPHASE"
+									class="new__img"
+								/>
+
+								<div class="new__data">
+									<h3 class="new__title">
+										ROLEX <br />
+										CELLINI MOONPHASE
+									</h3>
+									<span class="new__price">₹2040999</span>
+								</div>
+
+								<button class="button new__button">ADD TO CART</button>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Newsletter Section -->
+			<section class="newsletter section container">
+				<div class="newsletter__bg grid">
+					<div>
+						<h2 class="newsletter__title">
+							Subscribe To <br />
+							Our Newsletter!
+						</h2>
+						<p class="newsletter__description">
+							Don't miss out on your Discounts. <br />
+							Subscribe to our eMail Newsletter to get the Latest News, Updates and
+							Special Offers!
+						</p>
+					</div>
+
+					<form action="" class="newsletter__subscribe">
+						<input
+							type="email"
+							placeholder="Enter your eMail"
+							class="newsletter__input"
+						/>
+						<button class="button">SUBSCRIBE</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer section">
+			<div class="footer__container container grid">
+				<div class="footer__content">
+					<h3 class="footer__title">Contact Information</h3>
+
+					<ul class="footer__list">
+						<li>Bansberia, Hooghly, West Bengal, India.</li>
+						<li>+91-7003384387</li>
+						<li>nitin.chakraborty13@gmail.com</li>
+						<li>07:00 A.M. - 07:00 P.M.</li>
+					</ul>
+				</div>
+				<div class="footer__content">
+					<h3 class="footer__title">Our Policies</h3>
+
+					<ul class="footer__links">
+						<li>
+							<a href="#" class="footer__link">Delivery Policy</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Terms & Conditions</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Returns Policy</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Privacy & Cookies</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__content">
+					<h3 class="footer__title">Products</h3>
+
+					<ul class="footer__links">
+						<li>
+							<a href="#" class="footer__link">Analog Watches</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Digital Watches</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Mechanical Watches</a>
+						</li>
+						<li>
+							<a href="#" class="footer__link">Smart Watches</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__content">
+					<h3 class="footer__title">Social Links</h3>
+
+					<ul class="footer__social">
+						<a
+							href="https://www.facebook.com/NitinChakraborty2001/"
+							target="_blank"
+							class="footer__social-link"
+						>
+							<i class="bx bxl-facebook"></i>
+						</a>
+
+						<a
+							href="https://www.twitter.com/NitinCB2001/"
+							target="_blank"
+							class="footer__social-link"
+						>
+							<i class="bx bxl-twitter"></i>
+						</a>
+
+						<a
+							href="https://www.instagram.com/NitinChakraborty2001/"
+							target="_blank"
+							class="footer__social-link"
+						>
+							<i class="bx bxl-instagram"></i>
+						</a>
+					</ul>
+				</div>
+			</div>
+
+			<span class="footer__copy">Copyright &copy; WatchMart - All Rights Reserved!</span>
+		</footer>
+
+		<!-- Scroll Up -->
+		<a href="#" class="scrollup" id="scroll-up">
+			<i class="bx bx-up-arrow-alt scrollup__icon"></i>
+		</a>
+
+		<!-- Swiper - JavaScript -->
+		<script src="./Assets/JavaScript/swiper-bundle.min.js"></script>
+
+		<!-- Template - JavaScript -->
+		<script src="./Assets/JavaScript/Script.js"></script>
+	</body>
+</html>
